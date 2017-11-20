@@ -1,5 +1,4 @@
 package mercado;
-import  java.util.ArrayList;
 import  java.util.Scanner;
 
 /**
@@ -10,38 +9,36 @@ public class Produto {
     private  Double preco;
     private String nome;
     
-    public  Produto () {
-        
-    }
     
-    public Produto create () {
+   
+    public Produto(){
         Scanner teclado = new Scanner (System.in);
         System.out.println( " Digite o nome do produto: " );
         String setNome = teclado.nextLine();
         System.out.println( " Digite o preço do produto: " );
         double setPreco = teclado.nextDouble();
-        return null;
-    }
+    } 
     
-    public  void  setNome (String  novoNome) {
+    public  void  setNome(String  novoNome) {
         nome = novoNome;
     }
     
-    public  String  getNome () {
+    public  String  getNome() {
         return nome;
     }
     
-    public  void  setPreco ( Double  novoPreco ) {
+    public  void  setPreco( Double  novoPreco ) {
         preco = novoPreco;
     }
     
-    public  Double  getPreco () {
+    public  Double  getPreco() {
         return preco;
     }
     
-    public  void  imprimeProduto () {
-        System.out.println(getNome () +  " : "  + getPreco ());
+    
+    public void imprimeProduto() {
+        System.out.println(getNome () +  " : "  + getPreco ()); 
+        
     }
     
 }
-
